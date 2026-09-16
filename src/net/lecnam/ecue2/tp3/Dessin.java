@@ -10,4 +10,9 @@ public class Dessin {
         this.nbRec = 0;
     } //Exercice 7
 
+    public void ajout(Rectangle r){
+        this.tableau[this.nbRec] = r;
+        nbRec += 1;
+    } //Exercice 8
+
 }
