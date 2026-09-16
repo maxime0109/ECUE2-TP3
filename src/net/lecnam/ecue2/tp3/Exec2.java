@@ -14,6 +14,9 @@ public class Exec2 {
 
         r2.translate(3, 2);
 
+        Point p2 = new Point(7, 7);
+        System.out.println(r2.contient(p2) ? "Le rectangle contient le point" : "Le rectangle ne contient pas le point");
+
     }
 
 }
