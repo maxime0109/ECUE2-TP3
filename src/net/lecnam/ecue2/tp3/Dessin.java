@@ -15,4 +15,18 @@ public class Dessin {
         nbRec += 1;
     } //Exercice 8
 
+    public double retourneSurface(){
+        double surfaceTot = 0;
+        for (int i = 0; i < nbRec; i++){
+            surfaceTot += this.tableau[i].retourneSurface();
+        }
+        return surfaceTot;
+    }
+
+    public void translate(double x, double y){
+        for (int i = 0; i < nbRec; i++){
+            this.tableau[i].translate(x, y);
+        }
+    } //Exercice 9
+
 }

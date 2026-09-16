@@ -7,7 +7,12 @@ public class Exec3 {
         Dessin d = new Dessin();
 
         Rectangle r1 = new Rectangle(1, 1, 1, 1);
+        Rectangle r2 = new Rectangle(2, 2, 2, 2);
         d.ajout(r1);
+        d.ajout(r2);
+        System.out.println(d.retourneSurface());
+        d.translate(2, 2);
+        System.out.println(d.tableau[0].toString());
 
     }
 
