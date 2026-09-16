@@ -32,6 +32,16 @@ public class Rectangle {
 
     public boolean contient(Point p){
         return (p.longitude >= this.longitude && this.longitude + this.longueur >= p.longitude) && (p.latitude >= this.latitude && this.latitude + this.largeur >= p.latitude);
-    }//Exercice 5
+    } //Exercice 5
+
+    public boolean equals(Rectangle r){
+        if (this == r) return true;
+        if (r == null || getClass() != r.getClass()) return false;
+        return (r.longitude == this.longitude && r.latitude == this.latitude && r.longueur == this.longueur && r.largeur == this.largeur);
+    }
+
+    public String toString(){
+        return "Les coordonnées du point sont les suivant : \n    x : " + this.longitude + "\n    y : " + this.latitude + "\nLes mesures du rectangles sont les suivantes :\n    longueur : " + this.longueur + "\n    largeur : " + this.largeur + "\n    surface : " + this.retourneSurface();
+    } //Exercice 6
 
 }
