@@ -39,6 +39,6 @@ public class Dessin {
             }
         }
         return maxRec;
-    }
+    } //Exercice 10
 
 }
