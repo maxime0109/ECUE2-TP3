@@ -13,6 +13,8 @@ public class Exec3 {
         System.out.println(d.retourneSurface());
         d.translate(2, 2);
         System.out.println(d.tableau[0].toString());
+        System.out.println("Voici le plus grand rectangle du dessin : ");
+        System.out.println(d.retournePlusGrandRectangle().toString());
 
     }
 

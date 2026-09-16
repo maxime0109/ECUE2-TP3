@@ -29,4 +29,16 @@ public class Dessin {
         }
     } //Exercice 9
 
+    public Rectangle retournePlusGrandRectangle(){
+        Rectangle maxRec = this.tableau[0];
+        Double surfMaxRec = this.tableau[0].retourneSurface();
+        for (int i = 0; i < nbRec; i++){
+            if (surfMaxRec < this.tableau[i].retourneSurface()){
+                maxRec = this.tableau[i];
+                surfMaxRec = this.tableau[i].retourneSurface();
+            }
+        }
+        return maxRec;
+    }
+
 }
